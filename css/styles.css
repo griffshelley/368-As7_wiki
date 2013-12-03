@@ -1,54 +1,62 @@
 /* Stylesheet */
 
 body{ 
-	background-color: lightgray;
-	border: 3px black solid;
+	background-color: #FFC;
 	font-family: 'Montaga';
-		
+	font-size: 1em;		
 }
 
 h1 {
-	border-bottom: 5px black solid; width: 99%;
-	font-family: 'Montaga';
+font-family: 'Montaga';
 }
 
+li{
+float: left;
+margin-left: 3%;
+margin-right: 3%;	
+}
+
+li:hover{
+text-decoration: none;
+list-style: none;	
+}
 
 .dropcap {
-	font-size:72px;
-	float: left;
-	margin: -35px 1px;
+font-size: 3em;
+float: left;
+margin: -3.5% .01%;
 }
 	
-#teller {
-		border-bottom: 5px black solid;
-	
+#paragraph3, .paragraph1, #paragraph2, #paragraph4{
+margin: 3%;
+position: relative;
+left: 1%;
+text-align: justify;	
 }
-
-#paragraph4{ width:80%;
-}
-
 
 p{ 
 font-stretch: expanded;
 }
 
 h4{
-	border-bottom: 5px black solid;
+border-bottom: 5px black solid;
 }
 
 #footer {
-		border-top: 2px black solid;
-		margin: 20px;	
+border-top: 2px black solid;
+margin: 2%;	
 }
 
 p {
-	font-family: Arial;
+font-family: Arial;
 }
 
-.paragraph1{
-			border-bottom: 2px solid black;
+
+.grid_6 img{
+width: 62%;	
 }
 
 .bombpic{
-		align: center;
+align: center;
 }
+
