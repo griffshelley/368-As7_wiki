@@ -1,13 +1,64 @@
 /* Stylesheet */
 
+.grid_1 { width: 6.5%; } /* 65px/1000px = 0.065px */
+.grid_2 { width: 15%; } /* 150px/1000px =  0.15px */
+.grid_3 { width: 23.5%; } /* 235px/1000px = 0.235px */
+.grid_4 { width: 32%; } /* 320px/1000px = 0.32px */
+.grid_5 { width: 40.5%; } /* 405px/1000px = 0.405px */
+.grid_6 { width: 49%; } /* 490px/1000px = 0.49px */
+.grid_7 { width: 57.5%; } /* 575px/1000px = 0.575px */
+.grid_8 { width: 66%; } /* 660px/1000px = 0.66px */
+.grid_9 { width: 74.5%; } /* 745px/1000px = 0.745px */
+.grid_10 { width: 83%; } /* 830px/1000px = 0.83px */
+.grid_11 { width: 91.5%; } /* 915px/1000px = 0.915px */
+.grid_12 { width: 100%; } /* 1000px/1000px = 1 */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin: 0 1% 1% 0;
+	float: left;
+	display: block;
+}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+.container_12{
+width: 960px;
+margin: auto;
+}
+
 body{ 
-	background-color: #FFC;
-	font-family: 'Montaga';
-	font-size: 1em;		
+background-color: #FFC;
+font-family: 'Montaga';
+font-size: 1em;		
+}
+
+.stages{
+width: 96%;
 }
 
 h1 {
 font-family: 'Montaga';
+}
+
+#teller, #ulam{
+width: 35%;
+margin: 5%;	
+}
+
+.names{
+float: right;
+position: relative;	
 }
 
 li{
@@ -24,15 +75,10 @@ list-style: none;
 .dropcap {
 font-size: 3em;
 float: left;
-margin: -3.5% .01%;
+position: relative;
+bottom: 30px;
 }
 	
-#paragraph3, .paragraph1, #paragraph2, #paragraph4{
-margin: 3%;
-position: relative;
-left: 1%;
-text-align: justify;	
-}
 
 p{ 
 font-stretch: expanded;
@@ -43,7 +89,6 @@ border-bottom: 5px black solid;
 }
 
 #footer {
-border-top: 2px black solid;
 margin: 2%;	
 }
 
@@ -51,12 +96,34 @@ p {
 font-family: Arial;
 }
 
-
 .grid_6 img{
-width: 62%;	
+width: 50%;	
 }
 
 .bombpic{
 align: center;
 }
 
+
+
+@media screen and (max-width: 1024px){
+	body{ background: lightgray;}
+	.stages{ width: 90%;}
+	.container_12 {width: 96%;}
+	.headerlev2 { float: left;}
+	
+}
+
+@media screen and (max-width: 768px){
+	body{ background: white;}
+	.container_12 {width: 96%;}
+	p{width: 100%;}
+	.headerlev2 {position: relative;  top: -2%;}
+	
+
+
+@media screen and (max-width: 480px){
+	body{ background: lightgray;} 
+	.container { width: 96%;}
+	.headerlev2 { float: left;}
+}
