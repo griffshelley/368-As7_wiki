@@ -104,6 +104,10 @@ width: 50%;
 align: center;
 }
 
+aside{
+float: right;
+}
+
 
 
 @media screen and (max-width: 1024px){
@@ -111,7 +115,7 @@ align: center;
 	.stages{ width: 90%;}
 	.container_12 {width: 96%;}
 	.headerlev2 { float: left;}
-	
+	.header{margin-bottom: -10px;}
 }
 
 @media screen and (max-width: 768px){
@@ -119,11 +123,22 @@ align: center;
 	.container_12 {width: 96%;}
 	p{width: 100%;}
 	.headerlev2 {position: relative;  top: -2%;}
-	
-
+	#concept, #detail, #basic {width: 100%; margin: 1% 0 1% 0; text-indent: 5px;}
+	.header{margin-bottom: -10px;}
+}
 
 @media screen and (max-width: 480px){
 	body{ background: lightgray;} 
 	.container { width: 96%;}
 	.headerlev2 { float: left;}
+	#concept, #detail, #basic {width: 100%; margin: 1% 0 1% 0;}
+	.header{margin-bottom: -10px;}
+}
+
+@media screen and (max-width: 380px){
+	body{ background: lightgray;} 
+	.container { width: 96%;}
+	.headerlev2 { float: left;}
+	#concept, #detail, #basic {width: 100%; margin: 1% 0 1% 0;}
+	.header{margin-bottom: -10px;}
 }
